@@ -1,0 +1,90 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using LogoFX.Bootstrapping;
+using Microsoft.Extensions.DependencyInjection;
+using Solid.Bootstrapping;
+using Solid.Extensibility;
+using Solid.Practices.Composition;
+using Solid.Practices.Composition.Contracts;
+using Solid.Practices.Middleware;
+using Solid.Practices.Modularity;
+
+namespace LogoFX.Server.Bootstrapping
+{
+    public class BootstrapperBase : IInitializable,
+        IExtensible<BootstrapperBase>,
+        ICompositionModulesProvider,
+        IHaveRegistrator<IServiceCollection>
+    {
+        private readonly
+            List<IMiddleware<BootstrapperBase>>
+            _middlewares =
+                new List<IMiddleware<BootstrapperBase>>();
+
+        protected BootstrapperBase(IServiceCollection dependencyRegistrator)
+        {
+            Registrator = dependencyRegistrator;
+            PlatformProvider.Current =
+#if NET45
+                new NetPlatformProvider();
+#elif NETSTANDARD1_3
+                new NetStandardPlatformProvider();
+#endif
+        }
+
+        /// <summary>
+        /// Gets the list of modules that were discovered during bootstrapper configuration.
+        /// </summary>
+        /// <value>
+        /// The list of modules.
+        /// </value>
+        public IEnumerable<ICompositionModule> Modules { get; private set; } = new ICompositionModule[] { };
+
+        public IServiceCollection Registrator { get; }
+
+        protected virtual string ModulesPath => ".";
+
+        protected virtual string[] Prefixes => new string[] { };
+
+        private void InitializeCompositionModules()
+        {
+            var compositionManager = new CompositionManager();
+            compositionManager.Initialize(ModulesPath, Prefixes);
+            Modules = compositionManager.Modules.ToArray();
+        }
+
+        /// <summary>
+        /// Extends the functionality by using the specified middleware.
+        /// </summary>
+        /// <param name="middleware">The middleware.</param>
+        /// <returns></returns>
+        public BootstrapperBase Use(
+            IMiddleware<BootstrapperBase> middleware)
+        {
+            _middlewares.Add(middleware);
+            return this;
+        }
+
+        public void Initialize()
+        {
+            InitializeCompositionModules();
+            MiddlewareApplier.ApplyMiddlewares(this, _middlewares);
+        }
+    }
+
+    public interface IHaveRegistrator<TDependencyRegistrator>
+    {
+        TDependencyRegistrator Registrator { get; }
+    }
+
+    public class RegisterCompositionModulesMiddleware<TBootstrapper, TDependencyRegistrator> : IMiddleware<TBootstrapper>
+        where TBootstrapper : class, ICompositionModulesProvider, IHaveRegistrator<TDependencyRegistrator>
+        where TDependencyRegistrator : class
+    {
+        public TBootstrapper Apply(TBootstrapper @object)
+        {
+            @object.Registrator.RegisterContainerCompositionModules(@object.Modules);
+            return @object;
+        }
+    }
+}
