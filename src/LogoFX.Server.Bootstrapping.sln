@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Server.Bootstrapping
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Server.Bootstrapping.NETStandard13", "LogoFX.Server.Bootstrapping\netstandard1.3\LogoFX.Server.Bootstrapping.NETStandard13.csproj", "{D637EFB7-75F5-4C66-A6DD-89725F0AE599}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Server.Bootstrapping.NET45", "LogoFX.Server.Bootstrapping\net45\LogoFX.Server.Bootstrapping.NET45.csproj", "{1DC04E94-276F-4CC3-BAAD-C27B6F77FB12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Server.Bootstrapping.NET461", "LogoFX.Server.Bootstrapping\net461\LogoFX.Server.Bootstrapping.NET461.csproj", "{1DC04E94-276F-4CC3-BAAD-C27B6F77FB12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

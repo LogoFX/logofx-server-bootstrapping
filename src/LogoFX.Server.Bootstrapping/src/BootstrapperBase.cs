@@ -22,7 +22,7 @@ namespace LogoFX.Server.Bootstrapping
         {
             Registrator = dependencyRegistrator;
             PlatformProvider.Current =
-#if NET45
+#if NET461
                 new NetPlatformProvider();
 #elif NETSTANDARD1_3
                 new NetStandardPlatformProvider();
