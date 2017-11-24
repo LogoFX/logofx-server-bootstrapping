@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using LogoFX.Bootstrapping;
+using LogoFX.Server.Bootstrapping.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
 using Solid.Extensibility;
@@ -45,15 +46,12 @@ namespace LogoFX.Server.Bootstrapping
 
         public void Initialize()
         {
+            AssemblyLoadingManager.ServerNamespaces = () => new[] {"Api"};
+            CreateAssemblies();
             InitializeCompositionModules();
             MiddlewareApplier.ApplyMiddlewares(this, _middlewares);
         }
-    }
-
-    public interface IHaveRegistrator<TDependencyRegistrator>
-    {
-        TDependencyRegistrator Registrator { get; }
-    }
+    }    
 
     public class RegisterCompositionModulesMiddleware<TBootstrapper, TDependencyRegistrator> : IMiddleware<TBootstrapper>
         where TBootstrapper : class, ICompositionModulesProvider, IHaveRegistrator<TDependencyRegistrator>

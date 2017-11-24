@@ -1,4 +1,5 @@
-﻿using Solid.Extensibility;
+﻿using LogoFX.Server.Bootstrapping.Common;
+using Solid.Extensibility;
 using Solid.Practices.Composition.Contracts;
 
 namespace LogoFX.Server.Bootstrapping

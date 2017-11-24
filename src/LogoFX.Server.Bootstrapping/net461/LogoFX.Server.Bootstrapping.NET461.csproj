@@ -71,12 +71,18 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\src\AssembliesResolver.cs">
+      <Link>AssembliesResolver.cs</Link>
+    </Compile>
     <Compile Include="..\src\BootstrapperBase.Composition.cs">
       <Link>BootstrapperBase.Composition.cs</Link>
       <DependentUpon>BootstrapperBase.cs</DependentUpon>
     </Compile>
     <Compile Include="..\src\BootstrapperBase.cs">
       <Link>BootstrapperBase.cs</Link>
+    </Compile>
+    <Compile Include="..\src\BootstrapperBase.Discovery.cs">
+      <Link>BootstrapperBase.Discovery.cs</Link>
     </Compile>
     <Compile Include="..\src\BootstrapperExtensions.cs">
       <Link>BootstrapperExtensions.cs</Link>
@@ -87,10 +93,19 @@
     <Compile Include="..\src\CompositionStorage.cs">
       <Link>CompositionStorage.cs</Link>
     </Compile>
+    <Compile Include="..\src\ServerAssemblySourceProvider.cs">
+      <Link>ServerAssemblySourceProvider.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LogoFX.Server.Bootstrapping.Common\net461\LogoFX.Server.Bootstrapping.Common.NET461.csproj">
+      <Project>{1d018b6c-c326-43af-bdfd-ef9932eba7a3}</Project>
+      <Name>LogoFX.Server.Bootstrapping.Common.NET461</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
