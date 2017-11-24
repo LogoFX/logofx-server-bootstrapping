@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using LogoFX.Bootstrapping;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
@@ -7,13 +6,11 @@ using Solid.Extensibility;
 using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
 using Solid.Practices.Middleware;
-using Solid.Practices.Modularity;
 
 namespace LogoFX.Server.Bootstrapping
 {
-    public class BootstrapperBase : IInitializable,
-        IExtensible<BootstrapperBase>,
-        ICompositionModulesProvider,
+    public partial class BootstrapperBase : IInitializable,
+        IExtensible<BootstrapperBase>,     
         IHaveRegistrator<IServiceCollection>
     {
         private readonly
@@ -30,28 +27,9 @@ namespace LogoFX.Server.Bootstrapping
 #elif NETSTANDARD1_3
                 new NetStandardPlatformProvider();
 #endif
-        }
+        }       
 
-        /// <summary>
-        /// Gets the list of modules that were discovered during bootstrapper configuration.
-        /// </summary>
-        /// <value>
-        /// The list of modules.
-        /// </value>
-        public IEnumerable<ICompositionModule> Modules { get; private set; } = new ICompositionModule[] { };
-
-        public IServiceCollection Registrator { get; }
-
-        protected virtual string ModulesPath => ".";
-
-        protected virtual string[] Prefixes => new string[] { };
-
-        private void InitializeCompositionModules()
-        {
-            var compositionManager = new CompositionManager();
-            compositionManager.Initialize(ModulesPath, Prefixes);
-            Modules = compositionManager.Modules.ToArray();
-        }
+        public IServiceCollection Registrator { get; }       
 
         /// <summary>
         /// Extends the functionality by using the specified middleware.

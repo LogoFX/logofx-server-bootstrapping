@@ -84,11 +84,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\src\Bootstrapper.cs">
-      <Link>Bootstrapper.cs</Link>
+    <Compile Include="..\src\BootstrapperBase.Composition.cs">
+      <Link>BootstrapperBase.Composition.cs</Link>
+      <DependentUpon>BootstrapperBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\src\BootstrapperBase.cs">
+      <Link>BootstrapperBase.cs</Link>
     </Compile>
     <Compile Include="..\src\BootstrapperExtensions.cs">
       <Link>BootstrapperExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\src\CompositionHelper.cs">
+      <Link>CompositionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\CompositionStorage.cs">
+      <Link>CompositionStorage.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

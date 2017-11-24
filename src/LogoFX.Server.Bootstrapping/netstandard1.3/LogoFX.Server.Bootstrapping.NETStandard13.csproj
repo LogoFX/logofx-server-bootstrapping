@@ -16,8 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\src\Bootstrapper.cs" Link="Bootstrapper.cs" />
+    <Compile Include="..\src\BootstrapperBase.Composition.cs" Link="BootstrapperBase.Composition.cs" DependentUpon="BootstrapperBase.cs" />
+    <Compile Include="..\src\BootstrapperBase.cs" Link="BootstrapperBase.cs" />
     <Compile Include="..\src\BootstrapperExtensions.cs" Link="BootstrapperExtensions.cs" />
+    <Compile Include="..\src\CompositionHelper.cs" Link="CompositionHelper.cs" />
+    <Compile Include="..\src\CompositionStorage.cs" Link="CompositionStorage.cs" />
     <Compile Include="..\src\NetStandardPlatformProvider.cs" Link="NetStandardPlatformProvider.cs" />
   </ItemGroup>
 
