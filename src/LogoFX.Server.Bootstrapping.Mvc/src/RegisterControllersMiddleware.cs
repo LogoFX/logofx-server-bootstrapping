@@ -1,5 +1,5 @@
-﻿using LogoFX.Server.Bootstrapping.Common;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Solid.Bootstrapping;
 using Solid.Practices.Composition.Contracts;
 using Solid.Practices.Middleware;
 

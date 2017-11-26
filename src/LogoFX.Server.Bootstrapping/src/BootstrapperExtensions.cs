@@ -1,4 +1,5 @@
-﻿using LogoFX.Server.Bootstrapping.Common;
+﻿using LogoFX.Bootstrapping;
+using Solid.Bootstrapping;
 using Solid.Extensibility;
 using Solid.Practices.Composition.Contracts;
 
@@ -12,7 +13,7 @@ namespace LogoFX.Server.Bootstrapping
             IHaveRegistrator<TDependencyRegistrator>, ICompositionModulesProvider
             where TDependencyRegistrator : class
         {
-            return bootstrapper.Use(new RegisterCompositionModulesMiddleware<TBootstrapper, TDependencyRegistrator>());
+            return bootstrapper.Use(new RegisterCustomCompositionModulesMiddleware<TBootstrapper, TDependencyRegistrator>());
         }
     }
 }

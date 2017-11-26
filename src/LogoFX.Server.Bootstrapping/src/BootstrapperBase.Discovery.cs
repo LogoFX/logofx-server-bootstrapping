@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Reflection;
-using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
 
 namespace LogoFX.Server.Bootstrapping

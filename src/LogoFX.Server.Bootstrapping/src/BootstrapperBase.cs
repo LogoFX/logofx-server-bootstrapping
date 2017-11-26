@@ -1,11 +1,8 @@
 ﻿using System.Collections.Generic;
-using LogoFX.Bootstrapping;
-using LogoFX.Server.Bootstrapping.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
 using Solid.Extensibility;
 using Solid.Practices.Composition;
-using Solid.Practices.Composition.Contracts;
 using Solid.Practices.Middleware;
 
 namespace LogoFX.Server.Bootstrapping
@@ -51,16 +48,5 @@ namespace LogoFX.Server.Bootstrapping
             InitializeCompositionModules();
             MiddlewareApplier.ApplyMiddlewares(this, _middlewares);
         }
-    }    
-
-    public class RegisterCompositionModulesMiddleware<TBootstrapper, TDependencyRegistrator> : IMiddleware<TBootstrapper>
-        where TBootstrapper : class, ICompositionModulesProvider, IHaveRegistrator<TDependencyRegistrator>
-        where TDependencyRegistrator : class
-    {
-        public TBootstrapper Apply(TBootstrapper @object)
-        {
-            @object.Registrator.RegisterContainerCompositionModules(@object.Modules);
-            return @object;
-        }
-    }
+    }        
 }
