@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
 
 namespace LogoFX.Server.Bootstrapping
@@ -27,10 +29,11 @@ namespace LogoFX.Server.Bootstrapping
         private Assembly[] GetAssemblies()
         {
             OnConfigureAssemblyResolution();
+            var rootPath = PathHelper.GetAbsolutePath(ModulesPath);
             var assembliesResolver = new AssembliesResolver(
-                new ServerAssemblySourceProvider(ModulesPath));
+                new ServerAssemblySourceProvider(rootPath));
             return ((IAssembliesReadOnlyResolver)assembliesResolver).GetAssemblies().ToArray();
-        }
+        }        
 
         /// <summary>
         /// Override this to provide custom assembly namespaces collection.

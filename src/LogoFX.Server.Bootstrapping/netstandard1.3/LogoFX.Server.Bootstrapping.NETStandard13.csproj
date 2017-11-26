@@ -24,6 +24,7 @@
     <Compile Include="..\src\CompositionHelper.cs" Link="CompositionHelper.cs" />
     <Compile Include="..\src\CompositionStorage.cs" Link="CompositionStorage.cs" />
     <Compile Include="..\src\NetStandardPlatformProvider.cs" Link="NetStandardPlatformProvider.cs" />
+    <Compile Include="..\src\PathHelper.cs" Link="PathHelper.cs" />
     <Compile Include="..\src\ServerAssemblySourceProvider.cs" Link="ServerAssemblySourceProvider.cs" />
   </ItemGroup>
 

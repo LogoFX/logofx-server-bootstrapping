@@ -93,6 +93,9 @@
     <Compile Include="..\src\CompositionStorage.cs">
       <Link>CompositionStorage.cs</Link>
     </Compile>
+    <Compile Include="..\src\PathHelper.cs">
+      <Link>PathHelper.cs</Link>
+    </Compile>
     <Compile Include="..\src\ServerAssemblySourceProvider.cs">
       <Link>ServerAssemblySourceProvider.cs</Link>
     </Compile>

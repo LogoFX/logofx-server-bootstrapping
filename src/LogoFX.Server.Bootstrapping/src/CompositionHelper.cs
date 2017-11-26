@@ -14,7 +14,7 @@ namespace LogoFX.Server.Bootstrapping
             string[] prefixes,
             bool reuseCompositionInformation)
         {
-            var rootPath = Path.Combine(PlatformProvider.Current.GetRootPath(), modulesPath);
+            var rootPath = PathHelper.GetAbsolutePath(modulesPath);
             ICompositionModule[] compositionModules;
             if (reuseCompositionInformation == false)
             {
