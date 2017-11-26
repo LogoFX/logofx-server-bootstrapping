@@ -39,7 +39,7 @@ namespace LogoFX.Server.Bootstrapping
 
         private void InitializeCompositionModules()
         {
-            Modules = CompositionHelper.GetCompositionModules(ModulesPath, Prefixes,
+            Modules = CompositionHelper.GetCompositionModules(PathHelper.GetAbsolutePath(ModulesPath), Prefixes,
                 _reuseCompositionInformation);
         }
     }
