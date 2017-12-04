@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
+using Solid.Practices.Composition.Web;
 
 namespace LogoFX.Server.Bootstrapping
 {    
@@ -27,7 +29,7 @@ namespace LogoFX.Server.Bootstrapping
         private Assembly[] GetAssemblies()
         {
             OnConfigureAssemblyResolution();
-            var rootPath = PathHelper.GetAbsolutePath(ModulesPath);
+            var rootPath = PlatformProvider.Current.GetAbsolutePath(ModulesPath);
             var assembliesResolver = new AssembliesResolver(
                 new ServerAssemblySourceProvider(rootPath));
             return ((IAssembliesReadOnlyResolver)assembliesResolver).GetAssemblies().ToArray();

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Server.Bootstrapping.NETStandard20", "LogoFX.Server.Bootstrapping\netstandard2.0\LogoFX.Server.Bootstrapping.NETStandard20.csproj", "{F2B7E7A2-19E0-41D6-898A-EA6660F2F05A}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Server.Bootstrapping.NET461", "LogoFX.Server.Bootstrapping\net461\LogoFX.Server.Bootstrapping.NET461.csproj", "{1DC04E94-276F-4CC3-BAAD-C27B6F77FB12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Server.Bootstrapping.Mvc.NET461", "LogoFX.Server.Bootstrapping.Mvc\net461\LogoFX.Server.Bootstrapping.Mvc.NET461.csproj", "{F90011E1-654F-4434-8A24-0760CE7EE0BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Server.Bootstrapping.Mvc.NETStandard13", "LogoFX.Server.Bootstrapping.Mvc\netstandard1.3\LogoFX.Server.Bootstrapping.Mvc.NETStandard13.csproj", "{EEF23DE2-B90F-4A84-89AD-81C909F8A4F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Server.Bootstrapping.Mvc.NETStandard20", "LogoFX.Server.Bootstrapping.Mvc\netstandard2.0\LogoFX.Server.Bootstrapping.Mvc.NETStandard20.csproj", "{B5962A9B-2C7D-4722-9986-12F18897BD54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{F90011E1-654F-4434-8A24-0760CE7EE0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F90011E1-654F-4434-8A24-0760CE7EE0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F90011E1-654F-4434-8A24-0760CE7EE0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF23DE2-B90F-4A84-89AD-81C909F8A4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF23DE2-B90F-4A84-89AD-81C909F8A4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF23DE2-B90F-4A84-89AD-81C909F8A4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF23DE2-B90F-4A84-89AD-81C909F8A4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5962A9B-2C7D-4722-9986-12F18897BD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5962A9B-2C7D-4722-9986-12F18897BD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5962A9B-2C7D-4722-9986-12F18897BD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5962A9B-2C7D-4722-9986-12F18897BD54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

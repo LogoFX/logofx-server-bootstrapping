@@ -33,47 +33,47 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LogoFX.Bootstrapping, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc1\lib\net45\LogoFX.Bootstrapping.dll</HintPath>
+      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc2\lib\net45\LogoFX.Bootstrapping.dll</HintPath>
     </Reference>
     <Reference Include="LogoFX.Bootstrapping.Middleware, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc1\lib\net45\LogoFX.Bootstrapping.Middleware.dll</HintPath>
+      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc2\lib\net45\LogoFX.Bootstrapping.Middleware.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Solid.Bootstrapping, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Bootstrapping.1.2.1-rc1\lib\net45\Solid.Bootstrapping.dll</HintPath>
+      <HintPath>..\..\packages\Solid.Bootstrapping.1.2.1-rc2\lib\net45\Solid.Bootstrapping.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Extensibility, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Extensibility.1.2.0\lib\net45\Solid.Extensibility.dll</HintPath>
+    <Reference Include="Solid.Extensibility, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Extensibility.1.2.1-rc1\lib\net45\Solid.Extensibility.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.Composition, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Composition.Core.1.2.0\lib\net45\Solid.Practices.Composition.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Composition.Core.1.2.1-rc2\lib\net45\Solid.Practices.Composition.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.Composition.Container, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Composition.Core.1.2.0\lib\net45\Solid.Practices.Composition.Container.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition.Container, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Composition.Core.1.2.1-rc2\lib\net45\Solid.Practices.Composition.Container.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.Composition.Contracts, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Composition.Core.1.2.0\lib\net45\Solid.Practices.Composition.Contracts.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition.Contracts, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Composition.Core.1.2.1-rc2\lib\net45\Solid.Practices.Composition.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.Composition.Platform, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Composition.1.2.0\lib\net45\Solid.Practices.Composition.Platform.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition.Platform, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Composition.1.2.1-rc1\lib\net45\Solid.Practices.Composition.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.IoC, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.IoC.1.2.0\lib\net45\Solid.Practices.IoC.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition.Web, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Composition.Web.1.2.1-rc2\lib\net45\Solid.Practices.Composition.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.Middleware, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Middleware.1.2.0\lib\net45\Solid.Practices.Middleware.dll</HintPath>
+    <Reference Include="Solid.Practices.IoC, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.IoC.1.2.1-rc1\lib\net45\Solid.Practices.IoC.dll</HintPath>
     </Reference>
-    <Reference Include="Solid.Practices.Modularity, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Modularity.1.2.0\lib\net45\Solid.Practices.Modularity.dll</HintPath>
+    <Reference Include="Solid.Practices.Middleware, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Middleware.1.2.1-rc1\lib\net45\Solid.Practices.Middleware.dll</HintPath>
+    </Reference>
+    <Reference Include="Solid.Practices.Modularity, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.Modularity.1.2.1-rc1\lib\net45\Solid.Practices.Modularity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\src\AssembliesResolver.cs">
-      <Link>AssembliesResolver.cs</Link>
-    </Compile>
     <Compile Include="..\src\BootstrapperBase.Composition.cs">
       <Link>BootstrapperBase.Composition.cs</Link>
       <DependentUpon>BootstrapperBase.cs</DependentUpon>
@@ -87,18 +87,6 @@
     </Compile>
     <Compile Include="..\src\BootstrapperExtensions.cs">
       <Link>BootstrapperExtensions.cs</Link>
-    </Compile>
-    <Compile Include="..\src\CompositionHelper.cs">
-      <Link>CompositionHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\CompositionStorage.cs">
-      <Link>CompositionStorage.cs</Link>
-    </Compile>
-    <Compile Include="..\src\PathHelper.cs">
-      <Link>PathHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\ServerAssemblySourceProvider.cs">
-      <Link>ServerAssemblySourceProvider.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

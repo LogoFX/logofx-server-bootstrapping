@@ -16,22 +16,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\src\AssembliesResolver.cs" Link="AssembliesResolver.cs" />
     <Compile Include="..\src\BootstrapperBase.Composition.cs" Link="BootstrapperBase.Composition.cs" DependentUpon="BootstrapperBase.cs" />
     <Compile Include="..\src\BootstrapperBase.cs" Link="BootstrapperBase.cs" />
-    <Compile Include="..\src\BootstrapperBase.Discovery.cs" Link="BootstrapperBase.Discovery.cs" DependentUpon="BootstrapperBase.cs"/>
+    <Compile Include="..\src\BootstrapperBase.Discovery.cs" Link="BootstrapperBase.Discovery.cs" DependentUpon="BootstrapperBase.cs" />
     <Compile Include="..\src\BootstrapperExtensions.cs" Link="BootstrapperExtensions.cs" />
-    <Compile Include="..\src\CompositionHelper.cs" Link="CompositionHelper.cs" />
-    <Compile Include="..\src\CompositionStorage.cs" Link="CompositionStorage.cs" />
-    <Compile Include="..\src\NetStandardPlatformProvider.cs" Link="NetStandardPlatformProvider.cs" />
-    <Compile Include="..\src\PathHelper.cs" Link="PathHelper.cs" />
-    <Compile Include="..\src\ServerAssemblySourceProvider.cs" Link="ServerAssemblySourceProvider.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc1" />
+    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.1.1" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.0" />
+    <PackageReference Include="Solid.Practices.Composition.Web" Version="1.2.1-rc2" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc1" />
   </ItemGroup>
 
 </Project>

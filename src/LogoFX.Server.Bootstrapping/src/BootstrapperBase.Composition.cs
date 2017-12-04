@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using LogoFX.Bootstrapping;
+using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
 using Solid.Practices.Modularity;
 
@@ -39,7 +41,7 @@ namespace LogoFX.Server.Bootstrapping
 
         private void InitializeCompositionModules()
         {
-            Modules = CompositionHelper.GetCompositionModules(PathHelper.GetAbsolutePath(ModulesPath), Prefixes,
+            Modules = CompositionHelper.GetCompositionModules(PlatformProvider.Current.GetAbsolutePath(ModulesPath), Prefixes,
                 _reuseCompositionInformation);
         }
     }
