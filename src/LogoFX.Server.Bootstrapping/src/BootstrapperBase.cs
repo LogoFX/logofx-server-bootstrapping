@@ -22,10 +22,10 @@ namespace LogoFX.Server.Bootstrapping
             PlatformProvider.Current =
 #if NET461
                 new NetPlatformProvider();
-#elif NETSTANDARD1_3
+#elif NETSTANDARD1_6 || NETSTANDARD2_0
                 new NetStandardPlatformProvider();
 #endif
-        }       
+        }
 
         public IServiceCollection Registrator { get; }       
 
