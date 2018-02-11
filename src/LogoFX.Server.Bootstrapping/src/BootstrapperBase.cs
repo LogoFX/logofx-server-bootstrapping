@@ -19,12 +19,7 @@ namespace LogoFX.Server.Bootstrapping
         protected BootstrapperBase(IServiceCollection dependencyRegistrator)
         {
             Registrator = dependencyRegistrator;
-            PlatformProvider.Current =
-#if NET461
-                new NetPlatformProvider();
-#elif NETSTANDARD1_6 || NETSTANDARD2_0
-                new NetStandardPlatformProvider();
-#endif
+            PlatformProvider.Current = new NetStandardPlatformProvider();
         }
 
         public IServiceCollection Registrator { get; }       
