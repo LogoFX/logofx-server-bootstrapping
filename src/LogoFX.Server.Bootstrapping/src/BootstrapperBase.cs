@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using LogoFX.Bootstrapping;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
 using Solid.Extensibility;
@@ -9,7 +10,8 @@ namespace LogoFX.Server.Bootstrapping
 {
     public partial class BootstrapperBase : IInitializable,
         IExtensible<BootstrapperBase>,     
-        IHaveRegistrator<IServiceCollection>
+        IHaveRegistrator<IServiceCollection>,
+        IHaveErrors
     {
         private readonly
             List<IMiddleware<BootstrapperBase>>
