@@ -7,7 +7,10 @@ namespace LogoFX.Server.Bootstrapping.Mvc
     {        
         public static IServiceCollection RegisterControllers(this IServiceCollection dependencyRegistrator, Assembly assembly)
         {
-            return dependencyRegistrator.AddMvcCore()
+            return dependencyRegistrator
+                .AddMvcCore()
+                .AddApiExplorer()
+                .AddJsonFormatters()
                 .AddApplicationPart(assembly)
                 .AddControllersAsServices().Services;
         }
