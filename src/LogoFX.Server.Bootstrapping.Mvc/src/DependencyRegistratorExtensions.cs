@@ -9,8 +9,6 @@ namespace LogoFX.Server.Bootstrapping.Mvc
         {
             return dependencyRegistrator
                 .AddMvcCore()
-                .AddApiExplorer()
-                .AddJsonFormatters()
                 .AddApplicationPart(assembly)
                 .AddControllersAsServices().Services;
         }
