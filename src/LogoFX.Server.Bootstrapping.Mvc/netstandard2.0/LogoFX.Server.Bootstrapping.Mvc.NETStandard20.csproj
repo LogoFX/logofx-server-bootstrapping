@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType></DebugType>
     <OutputPath>..\..\Bin\netstandard2.0\Release</OutputPath>
     <DocumentationFile>..\..\Bin\netstandard2.0\Release\netstandard2.0\LogoFX.Server.Bootstrapping.Mvc.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\src\DependencyRegistratorExtensions.cs" Link="DependencyRegistratorExtensions.cs" />
     <Compile Include="..\src\RegisterControllersMiddleware.cs" Link="RegisterControllersMiddleware.cs" />
@@ -19,9 +23,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
-    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc3" />
-    <PackageReference Include="Solid.Practices.Composition.Core" Version="1.2.1-rc6" />
-    <PackageReference Include="Solid.Practices.Middleware" Version="1.2.1-rc2" />
+    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc4" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="1.2.1-rc8" />
+    <PackageReference Include="Solid.Practices.Middleware" Version="1.2.1-rc3" />
   </ItemGroup>
 
 </Project>
