@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LogoFX.Bootstrapping, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc6\lib\netstandard2.0\LogoFX.Bootstrapping.dll</HintPath>
+      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc7\lib\netstandard2.0\LogoFX.Bootstrapping.dll</HintPath>
     </Reference>
     <Reference Include="LogoFX.Bootstrapping.Middleware, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc6\lib\netstandard2.0\LogoFX.Bootstrapping.Middleware.dll</HintPath>
+      <HintPath>..\..\packages\LogoFX.Bootstrapping.1.7.1-rc7\lib\netstandard2.0\LogoFX.Bootstrapping.Middleware.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
