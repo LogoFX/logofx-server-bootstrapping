@@ -9,15 +9,12 @@ namespace LogoFX.Server.Bootstrapping
     partial class BootstrapperBase
         : ICompositionModulesProvider
     {
-        private readonly bool _reuseCompositionInformation;
+        private readonly bool _reuseCompositionInformation = false;
 
         /// <summary>
         /// Gets the path of composition modules that will be discovered during bootstrapper configuration.
         /// </summary>
-        public virtual string ModulesPath
-        {
-            get { return "."; }
-        }
+        public virtual string ModulesPath => ".";
 
         /// <summary>
         /// Gets the prefixes of the modules that will be used by the module registrator
@@ -26,10 +23,7 @@ namespace LogoFX.Server.Bootstrapping
         /// <value>
         /// The prefixes.
         /// </value>
-        public virtual string[] Prefixes
-        {
-            get { return new string[] { }; }
-        }
+        public virtual string[] Prefixes => new string[] { };
 
         /// <inheritdoc />
         public IEnumerable<ICompositionModule> Modules { get; private set; } = new ICompositionModule[] { };

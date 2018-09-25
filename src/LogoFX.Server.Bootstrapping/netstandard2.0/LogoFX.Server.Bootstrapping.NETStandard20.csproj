@@ -8,7 +8,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType></DebugType>
     <OutputPath>..\..\Bin\netstandard2.0\Release</OutputPath>
-    <DocumentationFile>..\..\Bin\netstandard2.0\Release\netstandard2.0\LogoFX.Server.Bootstrapping.xml</DocumentationFile>
+    <DocumentationFile>..\..\Bin\netstandard2.0\Release\LogoFX.Server.Bootstrapping.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup>

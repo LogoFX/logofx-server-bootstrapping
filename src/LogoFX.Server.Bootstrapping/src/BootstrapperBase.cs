@@ -8,6 +8,9 @@ using Solid.Practices.Middleware;
 
 namespace LogoFX.Server.Bootstrapping
 {
+    /// <summary>
+    /// Defines basic bootstrapper for server initialization.
+    /// </summary>
     public partial class BootstrapperBase : IInitializable,
         IExtensible<BootstrapperBase>,     
         IHaveRegistrator<IServiceCollection>,
@@ -18,19 +21,17 @@ namespace LogoFX.Server.Bootstrapping
             _middlewares =
                 new List<IMiddleware<BootstrapperBase>>();
 
+        /// <inheritdoc />
         protected BootstrapperBase(IServiceCollection dependencyRegistrator)
         {
             Registrator = dependencyRegistrator;
             PlatformProvider.Current = new NetStandardPlatformProvider();
         }
 
-        public IServiceCollection Registrator { get; }       
+        /// <inheritdoc />
+        public IServiceCollection Registrator { get; }
 
-        /// <summary>
-        /// Extends the functionality by using the specified middleware.
-        /// </summary>
-        /// <param name="middleware">The middleware.</param>
-        /// <returns></returns>
+        /// <inheritdoc />
         public BootstrapperBase Use(
             IMiddleware<BootstrapperBase> middleware)
         {
@@ -38,6 +39,7 @@ namespace LogoFX.Server.Bootstrapping
             return this;
         }
 
+        /// <inheritdoc />
         public void Initialize()
         {
             AssemblyLoadingManager.ServerNamespaces = () => new[] {"Api"};
