@@ -41,8 +41,7 @@ namespace LogoFX.Server.Bootstrapping
 
         /// <inheritdoc />
         public void Initialize()
-        {
-            AssemblyLoadingManager.ServerNamespaces = () => new[] {"Api"};
+        {            
             CreateAssemblies();
             InitializeCompositionModules();
             MiddlewareApplier.ApplyMiddlewares(this, _middlewares);

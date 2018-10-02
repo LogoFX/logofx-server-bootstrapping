@@ -46,9 +46,6 @@
       <Link>BootstrapperBase.Discovery.cs</Link>
       <DependentUpon>BootstrapperBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\src\BootstrapperExtensions.cs">
-      <Link>BootstrapperExtensions.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

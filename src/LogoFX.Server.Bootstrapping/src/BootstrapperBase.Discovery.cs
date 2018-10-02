@@ -10,16 +10,8 @@ namespace LogoFX.Server.Bootstrapping
     partial class BootstrapperBase : IAssemblySourceProvider
     {        
         private Assembly[] _assemblies;
-        /// <summary>
-        /// Gets the assemblies that will be inspected for the application components.
-        /// </summary>
-        /// <value>
-        /// The assemblies.
-        /// </value>
-        public IEnumerable<Assembly> Assemblies
-        {
-            get { return _assemblies ?? (_assemblies = CreateAssemblies()); }
-        }
+        /// <inheritdoc />       
+        public IEnumerable<Assembly> Assemblies => _assemblies ?? (_assemblies = CreateAssemblies());
 
         private Assembly[] CreateAssemblies()
         {
