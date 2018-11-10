@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc7" />
+    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc9" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
     <PackageReference Include="Solid.Practices.Composition.Web" Version="1.2.1-rc4" />
     <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc5" />
