@@ -7,8 +7,8 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType></DebugType>
-    <OutputPath>..\..\Bin\netstandard2.0\Release</OutputPath>
-    <DocumentationFile>..\..\Bin\netstandard2.0\Release\LogoFX.Server.Bootstrapping.xml</DocumentationFile>
+    <OutputPath>..\Bin\netstandard2.0\Release</OutputPath>
+    <DocumentationFile>..\Bin\netstandard2.0\Release\LogoFX.Server.Bootstrapping.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -17,17 +17,13 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
-  </PropertyGroup>  
+  </PropertyGroup>   
 
   <ItemGroup>
-    <Compile Include="..\src\BootstrapperBase.Composition.cs" Link="BootstrapperBase.Composition.cs" DependentUpon="BootstrapperBase.cs" />
-    <Compile Include="..\src\BootstrapperBase.cs" Link="BootstrapperBase.cs" />
-    <Compile Include="..\src\BootstrapperBase.Discovery.cs" Link="BootstrapperBase.Discovery.cs" DependentUpon="BootstrapperBase.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc9" />
+    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc10" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc5" />
+    <PackageReference Include="Solid.Extensibility" Version="1.2.1-rc4" />
     <PackageReference Include="Solid.Practices.Composition.Web" Version="1.2.1-rc4" />
     <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc5" />
   </ItemGroup>

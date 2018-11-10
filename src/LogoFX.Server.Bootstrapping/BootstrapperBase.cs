@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using LogoFX.Bootstrapping;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
 using Solid.Extensibility;
