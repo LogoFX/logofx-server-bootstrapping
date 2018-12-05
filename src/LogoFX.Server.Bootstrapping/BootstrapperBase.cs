@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
+using Solid.Common;
 using Solid.Extensibility;
-using Solid.Practices.Composition;
 using Solid.Practices.Middleware;
 
 namespace LogoFX.Server.Bootstrapping
