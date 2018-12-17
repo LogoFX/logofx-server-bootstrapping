@@ -27,6 +27,6 @@ namespace LogoFX.Server.Bootstrapping
         {
             _registratorMiddlewaresWrapper.Use(middleware);
             return this;
-        }
+        }		
     }
 }
