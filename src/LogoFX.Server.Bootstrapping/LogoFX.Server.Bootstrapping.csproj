@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -18,11 +18,11 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
-  </PropertyGroup>   
+  </PropertyGroup>  
 
   <ItemGroup>
     <PackageReference Include="LogoFX.Bootstrapping" Version="2.0.0-rc1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
     <PackageReference Include="Solid.Bootstrapping" Version="2.0.0-rc1" />
     <PackageReference Include="Solid.Extensibility" Version="2.0.0-rc1" />
     <PackageReference Include="Solid.Practices.Composition.Web" Version="2.0.0-rc1" />
