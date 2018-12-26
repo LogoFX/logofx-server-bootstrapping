@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
 using Solid.Common;
@@ -16,7 +17,8 @@ namespace LogoFX.Server.Bootstrapping
          IExtensible<IHaveRegistrator<IServiceCollection>>,
          IHaveAspects<BootstrapperBase2>,
          ICompositionModulesProvider,
-         IHaveRegistrator<IServiceCollection>
+         IHaveRegistrator<IServiceCollection>, 
+         IAssemblySourceProvider
     {
         private ModularityAspect _modularityAspect;
         private DiscoveryAspect _discoveryAspect;
@@ -35,6 +37,8 @@ namespace LogoFX.Server.Bootstrapping
             _registratorExtensibilityAspect = new ExtensibilityAspect<IHaveRegistrator<IServiceCollection>>(this);
         }
 
+        public IEnumerable<Assembly> Assemblies => _discoveryAspect.Assemblies;
+
         IEnumerable<ICompositionModule> ICompositionModulesProvider<ICompositionModule>.Modules =>
             _modularityAspect.Modules;
 
@@ -43,6 +47,11 @@ namespace LogoFX.Server.Bootstrapping
             return _concreteExtensibilityAspect.Use(middleware);
         }
 
+        public IHaveRegistrator<IServiceCollection> Use(IMiddleware<IHaveRegistrator<IServiceCollection>> middleware)
+        {
+            return _registratorExtensibilityAspect.Use(middleware);
+        }
+        
         public virtual ModularityOptions ModularityOptions => new ModularityOptions();
 
         public void Initialize()
@@ -67,11 +76,6 @@ namespace LogoFX.Server.Bootstrapping
         {
             _aspectsCollection.UseAspect(aspect);
             return this;
-        }
-
-        public IHaveRegistrator<IServiceCollection> Use(IMiddleware<IHaveRegistrator<IServiceCollection>> middleware)
-        {
-            return _registratorExtensibilityAspect.Use(middleware);            
-        }
+        }        
     }
 }
