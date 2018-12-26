@@ -5,7 +5,6 @@ using Solid.Common;
 using Solid.Extensibility;
 using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
-using Solid.Practices.IoC;
 using Solid.Practices.Middleware;
 using Solid.Practices.Modularity;
 
