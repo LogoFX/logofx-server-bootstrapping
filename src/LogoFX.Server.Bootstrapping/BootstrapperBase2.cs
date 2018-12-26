@@ -10,7 +10,7 @@ using Solid.Practices.Modularity;
 
 namespace LogoFX.Server.Bootstrapping
 {
-    internal abstract class BootstrapperBase2 :
+    public class BootstrapperBase2 :
          IInitializable,
          IExtensible<BootstrapperBase2>,
          IExtensible<IHaveRegistrator<IServiceCollection>>,
