@@ -7,7 +7,6 @@ using Solid.Core;
 using Solid.Extensibility;
 using Solid.Practices.Composition;
 using Solid.Practices.Composition.Contracts;
-using Solid.Practices.Composition.Web;
 using Solid.Practices.Middleware;
 using Solid.Practices.Modularity;
 
