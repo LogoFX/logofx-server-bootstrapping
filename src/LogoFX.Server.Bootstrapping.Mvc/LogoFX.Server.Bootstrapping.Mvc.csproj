@@ -1,10 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>LogoFX.Server.Bootstrapping.Mvc</AssemblyName>
-    <RootNamespace>LogoFX.Server.Bootstrapping.Mvc</RootNamespace>
-  </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType></DebugType>
@@ -13,6 +7,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Version>2.0.0</Version>
   </PropertyGroup>
