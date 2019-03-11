@@ -79,9 +79,9 @@ namespace LogoFX.Server.Bootstrapping
         private IEnumerable<IAspect> CreateCoreAspects()
         {
             var aspects = new List<IAspect> { new PlatformAspect() };
-            _modularityAspect = new ModularityAspect(CompositionOptions);
-            aspects.Add(_modularityAspect);
             _discoveryAspect = new DiscoveryAspect(CompositionOptions);
+            _modularityAspect = new ModularityAspect(_discoveryAspect, CompositionOptions);
+            aspects.Add(_modularityAspect);
             aspects.Add(_discoveryAspect);
             aspects.Add(_concreteExtensibilityAspect);
             aspects.Add(_registratorExtensibilityAspect);

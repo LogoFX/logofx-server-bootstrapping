@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType></DebugType>
+    <DebugType>full</DebugType>
     <OutputPath>..\Bin\netstandard2.0\Release</OutputPath>
     <DocumentationFile>..\Bin\netstandard2.0\Release\LogoFX.Server.Bootstrapping.Mvc.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   
   <PropertyGroup>
@@ -19,9 +20,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Solid.Bootstrapping" Version="2.0.0" />
-    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.0.0" />
-    <PackageReference Include="Solid.Practices.Middleware" Version="2.0.0" />
+    <PackageReference Include="Solid.Bootstrapping" Version="2.1.0" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.1.0" />
+    <PackageReference Include="Solid.Practices.Middleware" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
   </ItemGroup>
