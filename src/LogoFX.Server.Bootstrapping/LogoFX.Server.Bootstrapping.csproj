@@ -19,11 +19,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Solid.Bootstrapping" Version="2.1.0" />
-    <PackageReference Include="Solid.Common.Core" Version="2.1.0" />
-    <PackageReference Include="Solid.Extensibility" Version="2.1.0" />
-    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.1.0" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="2.1.0" />
+    <PackageReference Include="Solid.Bootstrapping" Version="2.2.0" />
+    <PackageReference Include="Solid.Common.Core" Version="2.2.0" />
+    <PackageReference Include="Solid.Extensibility" Version="2.2.0" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.2.0" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.2.0" />
   </ItemGroup>
 
 </Project>
