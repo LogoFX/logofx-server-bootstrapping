@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace LogoFX.Server.Bootstrapping.Mvc
 {
     /// <summary>
-    /// Contains extensions for registerting services into <see cref="IServiceCollection"/>
+    /// Contains extensions for registering services into <see cref="IServiceCollection"/>
     /// </summary>
     public static class DependencyRegistratorExtensions
     {        
