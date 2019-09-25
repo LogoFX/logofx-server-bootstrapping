@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Solid.Bootstrapping;
 using Solid.Extensibility;
+using Solid.Practices.Composition;
 using Solid.Practices.Middleware;
 
 namespace LogoFX.Server.Bootstrapping
@@ -32,6 +33,7 @@ namespace LogoFX.Server.Bootstrapping
             UseAspect(_registratorExtensibilityAspect);
             _selfExtensibilityAspect = new ExtensibilityAspect<BootstrapperBase>(this);
             UseAspect(_selfExtensibilityAspect);
+            AssemblyLoadingManager.Extensions = () => new[] { ".dll" };
         }        
 
         /// <inheritdoc />

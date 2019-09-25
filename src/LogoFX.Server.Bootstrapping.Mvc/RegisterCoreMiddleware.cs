@@ -20,9 +20,8 @@ namespace LogoFX.Server.Bootstrapping.Mvc
         public TBootstrapper Apply(TBootstrapper @object)
         {
             @object.Registrator
-                   .AddMvcCore()
-                   .AddApiExplorer()
-                   .AddJsonFormatters();
+                .AddMvcCore(options => options.EnableEndpointRouting = false)
+                .AddApiExplorer();
             return @object;
         }
     }
