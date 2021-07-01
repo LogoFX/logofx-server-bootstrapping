@@ -5,5 +5,7 @@ Bootstrapping facilities for server applications
 
 <img src=https://img.shields.io/nuget/dt/LogoFX.Server.Bootstrapping>
 
+[![CodeFactor](https://www.codefactor.io/repository/github/logofx/logofx-server-bootstrapping/badge)](https://www.codefactor.io/repository/github/logofx/logofx-server-bootstrapping)
+
 [Get package](https://www.nuget.org/packages/LogoFX.Server.Bootstrapping/)
 
