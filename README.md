@@ -9,3 +9,5 @@ Bootstrapping facilities for server applications
 
 [Get package](https://www.nuget.org/packages/LogoFX.Server.Bootstrapping/)
 
+This repository is archived. Its functionality has been moved to https://github.com/LogoFX/bootstrapping
+
